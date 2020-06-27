@@ -1,0 +1,21 @@
+import java.util.*;
+public static main void(String[] args){
+  Scanner in = Scanner(System.in);
+  int[][] array;
+  for (int row = 0; row<array.length;i++)
+    for(int col = 0; col <= array[].length; col++){
+      array[row][col] = in.nextInt;
+      }
+   int largestElement = locateLargest(array);
+   System.out.println("The location of the largest element in your array is: " + );
+ }   
+     
+ public static int locateLargest(int [][] a){
+  int largestElement = 0;
+  for (int row = 0; row<array.length;i++)
+    for(int col = 0; col <= array[].length; col++){
+      if( a[row][col] > largestElement)
+        largestElement = a[row][col];
+        
+  return largestElement;
+  
