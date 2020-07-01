@@ -3,7 +3,9 @@ public class Lab2B {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
+		boolean key = true;
 		
+	do{	
 		//Student info
 		System.out.println("Programmer: Isam Nagi\r\n" + 
 		"Course: COSC 211, Summer 2020\r\n" + 
@@ -25,7 +27,19 @@ public class Lab2B {
 		
 		System.out.println("Number of words: " + longestWord(numWords));
 		
-		//
+		//Display Words in ascending order
+		
+		System.out.println("Words in ascending order: " + Arrays.sort(numWords));
+		
+		System.out.println("Do it again, yes (or no)?");
+		String answer = in.nextLine();
+		if(answer.charAt(0) == 'y' || answer.charAt(0) == 'Y')
+			key = true;
+		else key = false;
+	}
+	while(key);
+		
+		
 		
 
 	}
